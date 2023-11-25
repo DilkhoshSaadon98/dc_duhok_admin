@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "528539311244",
+    "project_id": "dc-duhok",
+    "storage_bucket": "dc-duhok.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528539311244:android:affbc71cfd42291090efa9",
+        "android_client_info": {
+          "package_name": "com.example.admin_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuPFQ9XxKwZWk7b954Xo7gplVtYfKoNKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
