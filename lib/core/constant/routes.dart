@@ -36,4 +36,5 @@ class AppRoute {
   static const String notificationView= "/notificationView";
   static const String notificationViewDetails= "/notificationViewDetails";
   static const String monthlySellingView= "/monthlySellingView";
+  static const String sendNotificationView= "/sendNotificationView";
 }

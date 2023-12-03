@@ -57,6 +57,7 @@ class AppLink {
 
   //! Notifications :
   static const String notificationView = "$server/notifications.php";
+  static const String sendNotification = "$server/test.php";
   //! Monthly Selling:
   static const String monthlySelling = "$server/monthly_selling/monthly_selling.php";
 }

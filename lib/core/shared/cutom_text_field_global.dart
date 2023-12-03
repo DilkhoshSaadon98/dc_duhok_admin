@@ -34,8 +34,8 @@ class CustomTextFormGlobal extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 5),
       margin: const EdgeInsets.symmetric(vertical: 5),
       child: TextFormField(
-        minLines: isDsc == true ? 10 : 1,
-        maxLines: isDsc == true ? 15 : 1,
+        minLines: isDsc == true ? 20 : 1,
+        maxLines: isDsc == true ? 30 : 1,
         validator: valid,
         textInputAction: TextInputAction.next,
         keyboardType:

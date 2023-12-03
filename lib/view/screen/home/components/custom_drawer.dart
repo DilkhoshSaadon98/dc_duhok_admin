@@ -14,7 +14,6 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    MyServices myServices = Get.find();
     Get.put(HomeController());
     return Drawer(
       backgroundColor: AppColor.white,

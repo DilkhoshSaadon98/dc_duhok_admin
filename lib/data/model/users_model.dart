@@ -1,6 +1,5 @@
 class UsersModel {
   int? usersId;
-  String? usersName;
   String? firstName;
   String? lastName;
   String? usersEmail;
@@ -12,7 +11,6 @@ class UsersModel {
 
   UsersModel(
       {this.usersId,
-      this.usersName,
       this.firstName,
       this.lastName,
       this.usersEmail,
@@ -24,7 +22,6 @@ class UsersModel {
 
   UsersModel.fromJson(Map<String, dynamic> json) {
     usersId = json['users_id'];
-    usersName = json['users_name'];
     firstName = json['users_firstname'];
     lastName = json['users_lastname'];
     usersEmail = json['users_email'];
@@ -38,7 +35,6 @@ class UsersModel {
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['users_id'] = this.usersId;
-    data['users_name'] = this.usersName;
     data['users_email'] = this.usersEmail;
     data['users_phone'] = this.usersPhone;
     data['users_verifycode'] = this.usersVerifycode;

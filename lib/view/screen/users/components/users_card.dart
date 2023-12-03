@@ -62,7 +62,6 @@ class UsersCardView extends GetView<UsersViewController> {
               title: "User First Name : ", data: listdata.firstName!),
           SigleRowUsersItems(
               title: "User Last Name : ", data: listdata.lastName!),
-          SigleRowUsersItems(title: "User Name : ", data: listdata.usersName!),
           SigleRowUsersItems(
               title: "User E-mail: ", data: listdata.usersEmail!),
           SigleRowUsersItems(

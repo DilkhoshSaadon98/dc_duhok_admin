@@ -8,7 +8,6 @@ import 'package:admin_app/data/model/home_model.dart';
 // import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
 
 class HomeController extends GetxController {
   MyServices myServices = Get.find();
@@ -16,7 +15,7 @@ class HomeController extends GetxController {
   HomeModel? homeModelData;
   List<dynamic>? valuesList;
   logout() {
-    String userid = myServices.sharedPreferences.getString("id")!;
+    // String userid = myServices.sharedPreferences.getString("id")!;
     // FirebaseMessaging.instance.unsubscribeFromTopic("users");
     // FirebaseMessaging.instance.unsubscribeFromTopic("users$userid");
     myServices.sharedPreferences.clear();
@@ -60,7 +59,7 @@ class HomeController extends GetxController {
     AppImageAsset.notificationsSvg,
     AppImageAsset.itemsSvg,
     AppImageAsset.ordersSvg,
-    // AppImageAsset.messagesSvg,
+    AppImageAsset.messagesSvg,
     // AppImageAsset.reportsSvg,
   ];
   List<String> titleData = [
@@ -69,6 +68,7 @@ class HomeController extends GetxController {
     'Notifications',
     'Items',
     'Orders',
+    'Send Notifi.'
     //  'Reports'
   ];
 
@@ -88,10 +88,9 @@ class HomeController extends GetxController {
     () {
       Get.toNamed(AppRoute.ordersHome);
     },
-    // () {},
-    // () {
-    //   Get.toNamed(AppRoute.monthlySellingView);
-    // },
+    () {
+      Get.toNamed(AppRoute.sendNotificationView);
+    },
   ];
   @override
   void onInit() {

@@ -15,6 +15,7 @@ import 'package:admin_app/view/screen/home/home_screen.dart';
 import 'package:admin_app/view/screen/items/items_add_screen.dart';
 import 'package:admin_app/view/screen/items/items_edit_screen.dart';
 import 'package:admin_app/view/screen/items/items_view_screen.dart';
+import 'package:admin_app/view/screen/notifications/send_notification.dart';
 import 'package:admin_app/view/screen/orders/main_screen_orders.dart';
 import 'package:admin_app/view/screen/orders/details_screen.dart';
 import 'package:admin_app/view/screen/orders/pending_screen.dart';
@@ -34,7 +35,7 @@ List<GetPage<dynamic>>? routes = [
       name: AppRoute.successResetpassword,
       page: () => const SuccessResetPassword()),
   //!
-  GetPage(name: AppRoute.homepage, page: () => HomeScreen()),
+  GetPage(name: AppRoute.homepage, page: () => const HomeScreen()),
   //! Orders :
   GetPage(name: AppRoute.orderspending, page: () => const OrdersPending()),
   //GetPage(name: AppRoute.offersProductDetails, page: () => const OffersProductDetails()),
@@ -60,4 +61,7 @@ List<GetPage<dynamic>>? routes = [
   GetPage(
       name: AppRoute.monthlySellingView,
       page: () => const MonthlySellingView()),
+  GetPage(
+      name: AppRoute.sendNotificationView,
+      page: () => const SendNotificationView()),
 ];
